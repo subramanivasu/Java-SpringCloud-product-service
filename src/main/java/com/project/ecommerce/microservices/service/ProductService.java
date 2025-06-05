@@ -22,6 +22,7 @@ public class ProductService {
                 .name(productRequest.name())
                 .description(productRequest.description())
                 .price(productRequest.price())
+                .skuCode(productRequest.skuCode())
                 .build();
         productRepository.save(product);
         ProductResponse productResponse = new ProductResponse(
