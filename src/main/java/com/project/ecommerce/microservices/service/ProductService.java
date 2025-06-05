@@ -29,7 +29,8 @@ public class ProductService {
                 product.getId(),
                 product.getName(),
                 product.getDescription(),
-                product.getPrice()
+                product.getPrice(),
+                product.getSkuCode()
         );
         log.info("Product {} is saved", product.getId());
         return productResponse;
@@ -43,7 +44,8 @@ public class ProductService {
                         product.getId(),
                         product.getName(),
                         product.getDescription(),
-                        product.getPrice()))
+                        product.getPrice(),
+                        product.getSkuCode()))
                 .toList();
 
     }
